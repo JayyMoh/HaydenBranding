@@ -6,7 +6,10 @@ import Contact from './Components/Contact/Contact';
 import Shop from './Components/Shop/Shop';
 import { Route, Routes } from 'react-router-dom'
 
+
 function App() {
+
+
   return (
     <div className="App">
       <Navbar />

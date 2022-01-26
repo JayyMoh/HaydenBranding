@@ -22,5 +22,20 @@ export default makeStyles(() => ({
         color: 'white',
         fontSize: '23px',
     },
-
+    mobileDrawer: {
+        
+    },
+    mobileMenuList: {
+        display: 'flex',
+        flexDirection: 'column',
+        listStyle: 'none',
+        padding: '5px',
+        margin: '0 15px',
+        textDecoration: 'none',
+        color: 'black',
+    },
+    chevronIcon: {
+        display: 'flex',
+        justifyContent: 'flex-start',
+    },
 }))
