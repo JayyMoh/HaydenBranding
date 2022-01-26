@@ -15,10 +15,10 @@ function Navbar() {
             <AppBar position='static'>
                 <ToolBar className={ classes.navBar }>
                     <IconButton aria-label='menu'>
-                        <MenuIcon className={ classes.menuIcon } />
+                        <MenuIcon className={ classes.menuIcon } fontSize='large' />
                     </IconButton>
-                    <Typography component={ Link } to='/'>
-                        Hayden Branding
+                    <Typography className={ classes.title } component={ Link } to='/'>
+                        <h1 className={ classes.brandName }>Hayden Branding</h1>
                     </Typography>
                 </ToolBar>
             </AppBar>
