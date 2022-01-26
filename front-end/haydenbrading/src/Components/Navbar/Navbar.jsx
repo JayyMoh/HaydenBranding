@@ -8,7 +8,8 @@ import makeStyles from './style'
 import MediaQuery from 'react-responsive'
 import { SwipeableDrawer } from '@mui/material'
 import { Divider } from '@material-ui/core'
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'
+import Menu from '@mui/icons-material/Menu'
 
 
 
@@ -30,30 +31,41 @@ const Navbar = () => {
         <div>
             <AppBar position='static'>
                 <ToolBar className={ classes.navBar }>
+                    <Avatar className={ classes.haydenLogo } alt='Hayden-logo' src='https://cdn.discordapp.com/attachments/268495515048607755/935957977884655676/Hayden-H.png' />
                     <MediaQuery maxWidth={700}>
                         {(showMenu) =>
                             showMenu
-                            ? <IconButton aria-label='menu' onClick={() => setOpen(true)}>
-                                  <MenuIcon className={ classes.menuIcon } fontSize='large' />
-                            </IconButton> :
-                            <IconButton display='none' />
+                            ?
+                            <>
+                                <Typography className={ classes.title } component={ Link } to='/'>
+                                    <h1 className={ classes.brandName }>Hayden Branding</h1>
+                                </Typography>
+                                <IconButton aria-label='menu' onClick={() => setOpen(true)}>
+                                    <MenuIcon className={ classes.menuIcon } fontSize='large' />
+                                </IconButton>
+                            </>
+                                :
+                            <>
+                                <Typography>
+                                    {navLinks.map((item) => (
+                                        <Link className={ classes.desktopMenuList } to={item.href}>{item.name}</Link>
+                                    ))}
+                                </Typography>
+                                <IconButton display='none' />
+                            </>
                         }
                     </MediaQuery>
-                    <Typography className={ classes.title } component={ Link } to='/'>
-                        <h1 className={ classes.brandName }>Hayden Branding</h1>
-                    </Typography>
-                    <Avatar className={ classes.haydenLogo } alt='Hayden-logo' src='https://cdn.discordapp.com/attachments/268495515048607755/935957977884655676/Hayden-H.png' />
                 </ToolBar>
                 <SwipeableDrawer
                     className={ classes.mobileDrawer }
-                    anchor='left'
+                    anchor='right'
                     open={open}
                     onOpen={() => setOpen(true)}
                     onClose={() => setOpen(false)}
                 >
                     <div className={ classes.chevronIcon }>
                         <IconButton onClick={() => setOpen(false)}>
-                            <ChevronLeftIcon />
+                            <ChevronRightIcon />
                         </IconButton>
                     </div>
                     <Divider />

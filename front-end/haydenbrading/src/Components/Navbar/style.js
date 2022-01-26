@@ -22,6 +22,9 @@ export default makeStyles(() => ({
         color: 'white',
         fontSize: '23px',
     },
+    SwipeableDrawer: {
+        backgroundColor: 'red',
+    },
     mobileDrawer: {
         
     },
@@ -33,6 +36,13 @@ export default makeStyles(() => ({
         margin: '0 15px',
         textDecoration: 'none',
         color: 'black',
+    },
+    desktopMenuList: {
+        textDecoration: 'none',
+        margin: '0 20px',
+        color: 'white',
+        fontFamily: 'Old Standard TT, serif',
+        fontSize: '20px'
     },
     chevronIcon: {
         display: 'flex',
