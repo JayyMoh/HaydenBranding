@@ -2,22 +2,25 @@ import { makeStyles } from '@material-ui/core/styles'
 
 export default makeStyles(() => ({
     navBar: {
-        backgroundColor: 'blue',
+        backgroundColor: '#33A1DE',
         borderBottom: '1px solid black',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
     },
     menuIcon: {
         color: 'white',
     },
     Link: {
-        color: 'white',
+        color: 'red',
     },
     title: {
         textDecoration: 'none',
     },
     brandName: {
-        fontFamily: 'Cinzel, serif',
+        fontFamily: 'Old Standard TT, serif',
         color: 'white',
-        marginLeft: '10px',
-        fontSize: '28px',
-    }
+        fontSize: '23px',
+    },
+
 }))
