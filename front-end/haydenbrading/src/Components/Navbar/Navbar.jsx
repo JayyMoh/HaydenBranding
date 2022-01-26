@@ -63,17 +63,17 @@ const Navbar = () => {
                     onOpen={() => setOpen(true)}
                     onClose={() => setOpen(false)}
                 >
-                    <div className={ classes.chevronIcon }>
+                    <div className={ classes.drawerPaper }>        
                         <IconButton onClick={() => setOpen(false)}>
-                            <ChevronRightIcon />
+                            <ChevronRightIcon className={ classes.chevronIcon } />
                         </IconButton>
-                    </div>
-                    <Divider />
+                        <Divider className={ classes.divider } />
                         <Typography onClick={() => setOpen(false)}>
                             {navLinks.map((item) => (
                                 <Link className={ classes.mobileMenuList } to={item.href}>{item.name}</Link>
                             ))}
                         </Typography>
+                    </div>
                 </SwipeableDrawer>
             </AppBar>
         </div>

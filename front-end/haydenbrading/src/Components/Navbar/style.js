@@ -11,9 +11,6 @@ export default makeStyles(() => ({
     menuIcon: {
         color: 'white',
     },
-    Link: {
-        color: 'red',
-    },
     title: {
         textDecoration: 'none',
     },
@@ -22,30 +19,35 @@ export default makeStyles(() => ({
         color: 'white',
         fontSize: '23px',
     },
-    SwipeableDrawer: {
-        backgroundColor: 'red',
-    },
-    mobileDrawer: {
-        
+    drawerPaper: {
+        backgroundColor: '#33A1DE',
+        width: '30vw',
+        height: '100vh',
+        borderLeft: '1.5px inset gray'
     },
     mobileMenuList: {
         display: 'flex',
         flexDirection: 'column',
         listStyle: 'none',
         padding: '5px',
-        margin: '0 15px',
         textDecoration: 'none',
-        color: 'black',
+        color: 'white',
+        borderBottom: '1px inset gray',
+        paddingLeft: '10px',
+    },
+    divider: {
+        backgroundColor: 'gray',
     },
     desktopMenuList: {
         textDecoration: 'none',
         margin: '0 20px',
         color: 'white',
         fontFamily: 'Old Standard TT, serif',
-        fontSize: '20px'
+        fontSize: '20px',
     },
     chevronIcon: {
         display: 'flex',
         justifyContent: 'flex-start',
+        color: 'white',
     },
 }))
