@@ -9,7 +9,6 @@ import MediaQuery from 'react-responsive'
 import { SwipeableDrawer } from '@mui/material'
 import { Divider } from '@material-ui/core'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import Menu from '@mui/icons-material/Menu'
 
 
 
@@ -63,7 +62,7 @@ const Navbar = () => {
                     onOpen={() => setOpen(true)}
                     onClose={() => setOpen(false)}
                 >
-                    <div className={ classes.drawerPaper }>        
+                    <div className={ classes.drawerPaper }>
                         <IconButton onClick={() => setOpen(false)}>
                             <ChevronRightIcon className={ classes.chevronIcon } />
                         </IconButton>
