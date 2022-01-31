@@ -1,11 +1,13 @@
 import React from 'react'
+// import makeStyles from './style'
 
 function Home() {
 
+    // const classes = makeStyles()
 
     return (
         <div>
-            <h1>Home Page</h1>
+            
         </div>
     )
 }

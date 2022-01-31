@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact';
 import Shop from './Components/Shop/Shop';
+import FeatureHead from './Components/FeatureHead/FeatureHead'
 import { Route, Routes } from 'react-router-dom'
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={ <Contact /> } />
         <Route path='/shop' element={ <Shop /> } />
       </Routes>
+      <FeatureHead />
     </div>
   );
 }
